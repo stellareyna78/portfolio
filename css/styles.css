@@ -1,0 +1,157 @@
+@import url(https://fonts.googleapis.com/css?family=Lobster+Two:400,700);
+
+/*nav*/ 
+ .navbar-default { 
+ 	background-color: transparent; 
+ 	border-color: transparent; 
+ } 
+ 
+ 
+ nav.navbar.navbar-default { 
+ 	position: absolute; 
+ 	top:0; 
+ 	z-index: 20; 
+ 	width: 100%; 
+} 
+ 
+ 
+ .navbar-default .navbar-nav>.active>a, 
+ .navbar-default .navbar-nav>.active>a:focus, 
+ .navbar-default .navbar-nav>.active>a:hover { 
+ 	color: #F08080; 
+ 	background-color: rgb(17, 17, 17, 5); 1 } 
+ 
+ 
+ .navbar-default .navbar-nav>li>a { 
+ 	color: #F08080; 
+ 	text-shadow: 1px 1px 2px #0a0a0a; 
+ } 
+ 
+ 
+ .navbar-default .navbar-nav > li > a:focus,  
+ .navbar-default .navbar-nav > li > a:hover { 
+     color: #808080; 
+     background-color: rgb(17, 17, 17, 2); 
+ } 
+ 
+ 
+ 
+ /*end of nav*/ 
+
+/*carousel*/ 
+ .carousel { 
+ 	margin-bottom: 60px; 
+ } 
+ 
+ .carousel-inner .item  { 
+ 	height: 400px; 
+ 	background-size: cover; 
+ 	background-position: center; 
+}
+ 
+.slide-one {
+	background-image: url(../image/pinkngreyrose.jpg);
+}
+
+.slide-two {
+	background-image: url(../image/pinkrose.jpg);
+}
+
+
+h1 {
+	font-family: 'Lobster Two', cursive;
+}
+
+@media all and (min-width: 992px) {
+	.col-md-4 {
+		width: 32%;
+	}
+
+	.row {
+		display:flex;
+		justify-content: space-around;
+	}
+}
+
+main img { 
+ 	width: 20%; 
+ 	border-radius: 50%; 
+ 	position: absolute; 
+ 	left: 15%; 
+  	border: 1px solid #cccccc; 
+ 	background-color: #dddddd; 
+ 	transition: left 350ms ease-in-out; 
+ } 
+
+
+main img:hover { 
+ 	left: 0%; 
+ } 
+article { 
+ 	width: 80%; 
+ 	float: right; 
+ 	padding: 10px 40px 60px; 
+ 	margin-bottom: 40px;  
+ 	position: relative; 
+ 	margin-top: 1%;
+ 	background-color: #e2377b;
+ }  
+  
+article:before { 
+	content: ""; 
+	display: block; 
+	height: 75px; 
+	width: 100%; 
+	position: absolute; 
+	left: 0;  	
+	top: -75px; 
+	background-image: url(..#); 
+	background-repeat: repeat-x; 
+}
+
+body {
+	background-color: #696969
+}
+
+footer {
+	background-color: #696969;
+	padding-top: 20px;
+	border-top: #e2377b;
+}
+
+
+.contact-info {
+	padding-top: 15px;
+	padding-left: 40px;
+	border-right: 1px solid #333;
+	border-left: 1px solid #333;
+}
+
+.social {
+	padding: 15px;
+
+}
+
+footer .fine-print {
+	margin-top: 10px;
+	margin-bottom: 15px;
+	color: #e2377b;
+}
+
+
+@media (max-width: 767px) {
+	.center {
+		float: none;
+		margin: 0 auto;
+	}
+	.bottom {
+		top: 0;
+	}
+	.social {
+		text-align: center;
+		font-size: 45px;
+	}
+	.social i {
+		margin: 20px 10px 0px;
+	}
+}
